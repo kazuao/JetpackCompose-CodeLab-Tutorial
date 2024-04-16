@@ -1,14 +1,23 @@
 [versions]
 agp = "8.3.2"
+jetbrainsKotlinxSerializationJson = "1.2.2"
 kotlin = "1.9.0"
 coreKtx = "1.12.0"
 junit = "4.13.2"
 junitVersion = "1.1.5"
 espressoCore = "3.5.1"
-lifecycleRuntimeKtx = "2.6.1"
+kotlinxCoroutinesAndroid = "1.7.3"
+kotlinxSerializationJson = "1.3.3"
+kotlinxSerializationJsonVersion = "1.6.3"
+kotlinxSerializationRuntime = "0.20.0"
+lifecycleAndroid = "0.1.12"
+lifecycleRuntimeKtx = "2.7.0"
 activityCompose = "1.8.2"
 composeBom = "2023.08.00"
-adsAdservices = "1.1.0-beta05"
+messageAdapterMoshi = "0.1.12"
+moshiKotlin = "1.11.0"
+scarlet = "0.1.12"
+websocketOkhttp = "0.1.12"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -25,7 +34,16 @@ androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-toolin
 androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
 androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
 androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
-androidx-ads-adservices = { group = "androidx.privacysandbox.ads", name = "ads-adservices", version.ref = "adsAdservices" }
+kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "kotlinxCoroutinesAndroid" }
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinxSerializationJson" }
+kotlinx-serialization-json-v122 = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "jetbrainsKotlinxSerializationJson" }
+kotlinx-serialization-json-v163 = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinxSerializationJsonVersion" }
+kotlinx-serialization-runtime = { module = "org.jetbrains.kotlinx:kotlinx-serialization-runtime", version.ref = "kotlinxSerializationRuntime" }
+lifecycle-android = { module = "com.tinder.scarlet:lifecycle-android", version.ref = "lifecycleAndroid" }
+message-adapter-moshi = { module = "com.tinder.scarlet:message-adapter-moshi", version.ref = "messageAdapterMoshi" }
+moshi-kotlin = { module = "com.squareup.moshi:moshi-kotlin", version.ref = "moshiKotlin" }
+scarlet = { module = "com.tinder.scarlet:scarlet", version.ref = "scarlet" }
+websocket-okhttp = { module = "com.tinder.scarlet:websocket-okhttp", version.ref = "websocketOkhttp" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
